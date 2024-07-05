@@ -29,18 +29,18 @@ body {
     font-weight: bold;
 }
 .encriptador__botones--encriptar{
-    
+    padding: 30px;
     background: #0a3871;
     color: white;
     border: 1px;
     border-radius: 10px;
 }
 .encriptador__botones--desencriptar{
+    padding: 30px;
     background: white;
     color: #0a3871;
     border: 1px;
     border-radius: 10px;
-    
 }
 
 .encriptador__botones--encriptar:hover{
