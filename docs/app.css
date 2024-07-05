@@ -1,0 +1,130 @@
+body {
+    background-color: #e9ecf8;
+}
+.navegacion{
+    margin: 50px;
+}
+.encriptador{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+.encriptador__texto input {
+    background: transparent;
+    border: 0px;
+    color: #0a3871;
+    font-size: xx-large;
+    border-radius: 10px;
+    padding: 200px;
+}
+.encriptador__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    gap: 50px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.encriptador__botones--encriptar{
+    
+    background: #0a3871;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+}
+.encriptador__botones--desencriptar{
+    background: white;
+    color: #0a3871;
+    border: 1px;
+    border-radius: 10px;
+    
+}
+
+.encriptador__botones--encriptar:hover{
+    cursor: pointer;
+}
+
+.encriptador__botones--desencriptar:hover{
+    cursor: pointer;
+}
+.resultado {
+    background-color: white ;
+    width: 20%;
+    height: 80vh;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.resultado svg {
+    margin-top: 100px;
+    width: auto;    
+    height: auto;
+}
+.resultado span {
+    margin-top: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.resultado p {
+    text-transform: uppercase;
+}
+.resultado__hecho{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:1080px) {
+    .encriptador {
+        flex-direction: column;
+    }
+    .encriptador__botones{
+        font-size: medium;
+        margin: 10px;
+    }
+    .encriptador__texto input{
+        font-size: small;
+        margin-top: 20px;
+
+    }
+    .encriptador__botones--desencriptar{
+        padding: 20px;
+    }
+    .encriptador__botones--encriptar{
+        padding: 20px;
+    }
+    .resultado{
+        width: 90vw;
+        height: 20vh;
+    }
+}
+
+@media (max-width:700px) {
+    .encriptador{
+        flex-direction: column;
+    }
+    .encriptador__texto input{
+        font-size: small;
+        padding: 50px;
+        margin-top: 50px;
+    }
+    .encriptador__botones{
+        font-size: small;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .encriptador__botones--desencriptar{
+        padding: 20px;
+    }
+    .encriptador__botones--encriptar{
+        padding: 20px;
+    }
+
+    .resultado {
+        width: 90vw;
+        height: 20vh;
+    }
+}
